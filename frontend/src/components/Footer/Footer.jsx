@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-left">
             <img src={assets.logo} alt="logo" height='60px' width='auto'/>
-            <p>Foodie is a food delivery app that connects you with the best restaurants in your area. Order your favorite dishes and enjoy them at home.</p>
+            <p>Foodio is a food delivery app that connects you with the best restaurants in your area. Order your favorite dishes and enjoy them at home.</p>
             <p>Follow us on:</p>
             <div className="footer-social-icons">
               <img src={assets.facebook_icon} alt="icon" />

@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 const Cart = () => {
 
-  const {cartItems , food_list,removeFromCart,getTotalCartAmount,deliveryFee,url,token} = useContext(StoreContext);
+  const {cartItems,food_list,removeFromCart,getTotalCartAmount,deliveryFee,token} = useContext(StoreContext);
 
   let isCartEmpty = false;
 
@@ -48,7 +48,7 @@ const Cart = () => {
               return (
                 <div key={item._id} id={index}>
                   <div className="cart-items-title cart-items-item">
-                    <img src={url+"/images/"+item.image} alt="food-image" />
+                    <img src={item.image} alt="food-image" />
                     <p>{item.name}</p>
                     <p>${item.price}</p>
                     <p>{cartItems[item._id]}</p>

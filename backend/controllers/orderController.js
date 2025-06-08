@@ -10,7 +10,8 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 const placeOrder = async (req,res)=>{
     try {
 
-        const frontend_url = process.env.PORT;
+        const frontend_url = 'https://foodio.onrender.com'
+;
         
         const newOrder = new orderModel({
             userId:req.body.userId,
